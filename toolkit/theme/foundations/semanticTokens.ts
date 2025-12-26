@@ -59,8 +59,8 @@ const semanticTokens: ThemingConfig['semanticTokens'] = {
     // ELEMENTS
     address: {
       highlighted: {
-        bg: { value: { _light: '{colors.blue.50}', _dark: '{colors.blue.900}' } },
-        border: { value: { _light: '{colors.blue.200}', _dark: '{colors.blue.600}' } },
+        bg: { value: { _light: '{colors.yellow.50}', _dark: '{colors.yellow.900}' } },
+        border: { value: { _light: '{colors.yellow.200}', _dark: '{colors.yellow.600}' } },
       },
     },
 
@@ -386,7 +386,7 @@ const semanticTokens: ThemingConfig['semanticTokens'] = {
       },
       yellow: {
         bg: { value: { _light: '{colors.yellow.50}', _dark: '{colors.yellow.800}' } },
-        fg: { value: { _light: '{colors.yellow.500}', _dark: '{colors.yellow.100}' } },
+        fg: { value: { _light: '{colors.yellow.600}', _dark: '{colors.yellow.100}' } },
       },
       teal: {
         bg: { value: { _light: '{colors.teal.50}', _dark: '{colors.teal.800}' } },
