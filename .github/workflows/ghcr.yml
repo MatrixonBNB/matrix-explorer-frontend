@@ -59,10 +59,11 @@ jobs:
 
       - name: Tag & push
         run: |
-          docker tag blockscout-frontend:local ghcr.io/${{ github.repository_owner }}/matrix-explorer-frontend:latest
-          docker tag blockscout-frontend:local ghcr.io/${{ github.repository_owner }}/matrix-explorer-frontend:${{ github.sha }}
-          docker push ghcr.io/${{ github.repository_owner }}/matrix-explorer-frontend:latest
-          docker push ghcr.io/${{ github.repository_owner }}/matrix-explorer-frontend:${{ github.sha }}
+          OWNER_LC=$(echo "${{ github.repository_owner }}" | tr '[:upper:]' '[:lower:]')
+          docker tag blockscout-frontend:local ghcr.io/${OWNER_LC}/matrix-explorer-frontend:latest
+          docker tag blockscout-frontend:local ghcr.io/${OWNER_LC}/matrix-explorer-frontend:${{ github.sha }}
+          docker push ghcr.io/${OWNER_LC}/matrix-explorer-frontend:latest
+          docker push ghcr.io/${OWNER_LC}/matrix-explorer-frontend:${{ github.sha }}
 
       - name: Cleanup docker
         if: always()
