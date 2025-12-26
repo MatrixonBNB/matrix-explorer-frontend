@@ -26,6 +26,12 @@ jobs:
           username: ${{ github.repository_owner }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Set up Node.js 22.14
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22.14.0"
+          cache: "yarn"
+
       - name: Install deps
         run: yarn install --frozen-lockfile --network-timeout 100000
 
