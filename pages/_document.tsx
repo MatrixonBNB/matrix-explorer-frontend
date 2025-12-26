@@ -6,7 +6,6 @@ import logRequestFromBot from 'nextjs/utils/logRequestFromBot';
 import * as serverTiming from 'nextjs/utils/serverTiming';
 
 import config from 'configs/app';
-import * as svgSprite from 'ui/shared/IconSvg';
 
 const marketplaceFeature = config.features.marketplace;
 
@@ -60,9 +59,9 @@ class MyDocument extends Document {
           ) }
 
           { /* FAVICON */ }
-          <link rel="icon" type="image/png" href="/assets/branding/matrix.png" />
-          <link rel="shortcut icon" href="/assets/branding/matrix.png" />
-          <link rel="apple-touch-icon" href="/assets/branding/matrix.png" />
+          <link rel="icon" type="image/png" href="/assets/branding/matrix.png"/>
+          <link rel="shortcut icon" href="/assets/branding/matrix.png"/>
+          <link rel="apple-touch-icon" href="/assets/branding/matrix.png"/>
         </Head>
         <body>
           <Main/>
